@@ -28,6 +28,6 @@ class PrincipalAngle():
         return res
         
     def get_pas(self):
-        res = np.linalg.svd(self.QA.T.dot(self.QB))[1]
+        res = np.linalg.svd(self.QA.T.dot(self.QB),compute_uv = 0)
         return res
     

@@ -14,7 +14,7 @@ Here is the example to cluster two circles, in which X is the dataset:<br><br><b
 from SMMC.SMMC import SMMC<br>
 <br>
 test = SMMC(X)<br>
-test.trian_mppca(d = 2, M = 40, max_iter = 200, tol = 1e-4, kmeans_init = False)<br>
+test.train_mppca(d = 2, M = 40, max_iter = 200, tol = 1e-4, kmeans_init = False)<br>
 locs = test.run_cluster(8,20,2)<br><br><br>
 
 And You can plot your result:<br><br><br>
@@ -22,10 +22,11 @@ And You can plot your result:<br><br><br>
 ![Image](https://github.com/hyychong/SMMC/raw/master/examples/example3.png)
 
 
-More Examples are in folder examples.
+More Examples are in directory examples, like this:<br>
+![Image](https://github.com/hyychong/SMMC/raw/master/examples/example6_1.png)
+![Image](https://github.com/hyychong/SMMC/raw/master/examples/example6_2.png)<br>
+![Image](https://github.com/hyychong/SMMC/raw/master/examples/example6_3.png)<br>
 
-
-
-
+It's cool.
 
 

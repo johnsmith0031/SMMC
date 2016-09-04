@@ -18,7 +18,7 @@ class SMMC():
         '''
         self.data = data
         
-    def trian_mppca(self,d,M,max_iter = 100,tol = 1e-4,managed = True,kmeans_init = False):
+    def train_mppca(self,d,M,max_iter = 100,tol = 1e-4,managed = True,kmeans_init = False):
         '''
             Train MPPCA Model
             
@@ -44,6 +44,8 @@ class SMMC():
                     temp = PrincipalAngle(V[i],V[j])
                     temp = np.prod(temp.get_pas())
                 except:
+                    import traceback as tb
+                    tb.print_exc()
                     temp = 1
                 res[i,j] = temp
                 res[j,i] = res[i,j]
